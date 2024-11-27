@@ -13,5 +13,5 @@ av_grades = [(sum(grades[0])/len(grades[0])), (sum(grades[1])/len(grades[1])), (
 print (av_grades)
 
 # 3 щаг - Составляем словрь с именами учеников (ключ) и значениями их средних оценок (значение)
-dict = {students[0]: av_grades[0], students[1]: av_grades[1], students[2]: av_grades[2], students[3]: av_grades[3], students[4]: av_grades[4]}
-print (dict)
+journal = dict(zip(students, av_grades))
+print (journal)
